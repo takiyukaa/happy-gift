@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8 col-lg-8">
+      <h1>Update info for <%= @person.name %></h1>
+      <%= simple_form_for(@person) do |f| %>
+        <%= f.input :name %>
+        <%= f.input :group %>
+        <%= f.input :birthday, start_year: Date.today.year - 100, end_year: Date.today.year %>
+        <%= f.input :address %>
+        <%= f.input :description %>
+        <%= f.button :submit, class: "btn-warning" %> <%= link_to "Cancel", :back, {:class=>"btn btn-danger"} %>
+      <% end %>
+
+    </div>
+  </div>
+</div>

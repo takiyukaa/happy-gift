@@ -1,0 +1,15 @@
+<div class="container">
+  <%= link_to edit_person_path do %>
+    <button class="btn btn-warning">edit info</button>
+  <% end %>
+
+  <h1><%= @person.name %></h1>
+  <p><%= @person.group %></p>
+  <p><%= @person.birthday %></p>
+  <p><%= @person.address %></p>
+  <p><%= @person.description %></p>
+
+  <%= link_to people_path do %>
+    <button class="btn btn-warning">Back</button>
+  <% end %>
+</div>

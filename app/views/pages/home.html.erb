@@ -1,4 +1,15 @@
-<div class="banner">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1549465220-1a8b9238cd48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80);">
   <div class="container">
+    <h1>Happy Gift</h1>
+    <p>Be Happy by making your family and friend happy!</p>
+    <a class="btn btn-flat" href="#">Start now</a>
   </div>
+</div>
+<div class="container">
+  <%= link_to items_path do %>
+    <button class="btn btn-warning">items</button>
+  <% end %>
+  <%= link_to people_path do %>
+    <button class="btn btn-danger">friends</button>
+  <% end %>
 </div>

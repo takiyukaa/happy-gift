@@ -2,9 +2,11 @@
   <h1>People</h1>
 
   <% @people.each do |person|  %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-      <%= person.name %>
-    </div>
+    <%= link_to person_path(person) do %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+        <%= person.name %>
+      </div>
+    <% end %>
   <% end %>
 
 </div>
